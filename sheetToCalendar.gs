@@ -18,15 +18,3 @@ function addEvent() {
     calendar.createEvent(title, startTime, endTime, description);
   }
 }
-
-// ボタンの作成
-function onOpen(){
-
-  let ui = SpreadsheetApp.getUi()
-  let menu = ui.createMenu("コース");
-  
-  menu.addItem("イベント名","addEvent");
-
-  //スプレッドシートにボタンを反映
-  menu.addToUi();
-}
